@@ -215,3 +215,7 @@ footer{
     background-color: black;
     color: white;
 }
+#submit-btn{
+    width: 25%;
+    background: linear-gradient(to top left,red,yellow);
+}
