@@ -8,6 +8,9 @@
 :root{
     --navbar-height:59px;
 }
+body{
+    background: linear-gradient(to top right,black,orange);
+}
 #navbar{
     display: flex;
     align-items: center;
@@ -65,12 +68,12 @@ background-color: black;
     display: flex;
     flex-direction: column;
      justify-content: center;
-     height: 396px;
+     height: 100vh;
     align-items: center; 
     padding: 3px 200px;
 }#home::before{
     content: "";
-    background: url("../img/cover pic3.jpg") no-repeat center center/cover;
+    /* background: url("../img/cover pic3.jpg") no-repeat center center/cover; */
     position: absolute;
     width: 100%;
     height: 90%;
@@ -109,11 +112,12 @@ font-family: 'Shizuru', cursive;
     padding: 15px;
     font-size: 1.3rem;
     border-radius: 10px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin: 13px;
     color: white;
     background-color: red;
     cursor: pointer;
+    outline: none;
 
 
 
@@ -127,7 +131,7 @@ font-family: 'Shizuru', cursive;
 }#services .box{
     /* border:2px solid brown; */
     padding: 34px;
-    margin: -17px 6px;
+    margin: 20px 6px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -142,22 +146,25 @@ font-family: 'Shizuru', cursive;
 }
  .service-container h1{
     margin: 20px 9px;
+    color: white;
     padding: 15px;
     font-family: 'Courier New', Courier, monospace;
 } 
 /* cients-section */
 #clints-section::before{
     content: "";
-    background: url("../img/clients\ section.jpg");
+    /* background: linear-gradient(to top left,black,orange); */
     position: absolute;
-    height: 60%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     width: 100%;
     z-index: -1;
     opacity: 0.4;
 
 }
 #clints-section{
-    height: 344px;
+    height: 100%;
 
 }
 #clients{
@@ -188,7 +195,7 @@ align-items: center;
     position: relative;
 }#contact-section::before{
     content: "";
-    background: url("../img/contactimg.jpg") no-repeat center center/cover;
+    /* background: linear-gradient(to top right,black,orange) no-repeat center center/cover; */
     position: absolute;
     width: 100%;
     height: 100%;
@@ -221,4 +228,68 @@ footer{
     padding: 5px 5px;
     display: block;
     margin: auto;
+    outline: none;
+    border: none;
+    border-radius: 13px;
+    margin-top: 10px;
+}
+
+@media(max-width:700px){
+    body{
+        background-color: ;
+      
+    }
+    #navbar ul{
+        background-color: rgb(57, 53, 53);
+        display: block;
+        position: absolute;
+        display: none;
+        right: -200px;
+        top: 0px;
+        transition: 1s;
+    }
+    #navbar ul li{
+        display: block;
+    }
+    .cross-icon{
+        margin-top:8px;
+    }
+    #services{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #clients{
+       flex-wrap: wrap;
+    }
+    #contact-section{
+        margin-top: 158px;
+    }
+    #submit-btn{
+        width: 44%;
+    }
+    .service-container{
+        margin-top: 250px;
+        font-size: 28px;
+    }
+    .service-container h1{
+        font-size: 20px;
+    }
+    #home{
+        overflow: hidden;
+        font-size: 10px;
+    }
+    #home h1{
+        font-size: 25px;
+        margin-top: 23px;
+    }
+    .btn{
+        padding: 5px 50px;
+    }
+    #navbar i{
+        height: 5px;
+        width: 5px;
+        z-index: 2;
+        opacity: 1;
+    }
 }
