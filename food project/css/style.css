@@ -218,4 +218,7 @@ footer{
 #submit-btn{
     width: 25%;
     background: linear-gradient(to top left,red,yellow);
+    padding: 5px 5px;
+    display: block;
+    margin: auto;
 }
